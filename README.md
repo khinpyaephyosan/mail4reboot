@@ -1,4 +1,3 @@
-# Life.sh
 Email Alert about Linux Server Rebooting
 ========================================
 
