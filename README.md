@@ -5,7 +5,7 @@ This is use for monitoring linux rhel7 system up and down. It is for systemd.
 
 Notes are as follow.....
 
-1) assume RelayMail or local Mail Server is working and mail command is available
+1) assume RelayMail or local Mail Server is working and mailx was already installed
 2) copy startupmail.sh and shutdownmail.sh to /opt
 3) copy mail3sysdown_n_up.service to /etc/systemd/system/
 
