@@ -1,0 +1,13 @@
+[Unit]
+Description=Send a mail on Boot and Shutdown Task
+Requires=postfix.service
+After=network-online.target postfix.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/opt/startupmail.sh
+ExecStop=/opt/shutdownmail.sh
+
+[Install]
+WantedBy=multi-user.target
