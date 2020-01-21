@@ -1,0 +1,13 @@
+[Unit]
+Description=run jupyter
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=srvmgmt
+RemainAfterExit=true
+ExecStart=/home/srvmgmt/jupyter/on.sh
+ExecStop=/home/srvmgmt/jupyter/off.sh
+
+[Install]
+WantedBy=multi-user.target
