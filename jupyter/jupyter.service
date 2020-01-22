@@ -4,7 +4,8 @@ After=network-online.target
 
 [Service]
 Type=oneshot
-User=srvmgmt
+User=exampleuser
+Group=exampleuser
 RemainAfterExit=true
 ExecStart=/home/srvmgmt/jupyter/on.sh
 ExecStop=/home/srvmgmt/jupyter/off.sh
